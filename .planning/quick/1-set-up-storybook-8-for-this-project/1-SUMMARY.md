@@ -36,9 +36,9 @@ decisions:
   - "vite pinned to ^6 — @storybook/builder-vite@8 supports Vite 4-6 only; Vite 8 uses rolldown which crashes on this codebase"
   - "@storybook/react pinned to @8 explicitly — npm resolved v10 by default which has incompatible entry-preview.mjs exports"
 metrics:
-  duration: "7 min"
+  duration: "8 min"
   completed_date: "2026-03-15"
-  tasks_completed: 2
+  tasks_completed: 3
   files_created: 6
   files_modified: 1
 ---
@@ -132,17 +132,17 @@ metrics:
 - `src/stories/Welcome.web.stories.tsx` imports from `../../tokens/colors` and `../../tokens/typography` — confirmed
 - `.rnstorybook/` is unchanged — confirmed (no files in .rnstorybook/ were touched)
 
-## Checkpoint: Human Verification Required
+### Task 3: Human verification of web Storybook UI
 
-The static build passes. Human verification is needed to confirm the UI renders correctly in the browser:
+**Verified by user on 2026-03-15:** Web Storybook UI loads correctly at localhost:6006.
 
-1. Run `npm run storybook:web` — should open http://localhost:6006
-2. Expand "Design System" in the sidebar → click "Welcome / ColorAndTypography"
-3. Confirm color swatches appear with correct background colors
-4. Confirm typography scale rows show increasing font sizes (xs=10px to 6xl=60px)
-5. Click the "Accessibility" tab — confirm a11y audit runs
-6. Click the "Controls" tab — confirm it shows (empty props is normal)
-7. Confirm `npm run storybook` (RN on-device) still starts Expo normally
+- Color swatches render with correct background colors
+- Typography scale rows display increasing font sizes
+- Accessibility tab shows a11y audit
+- Controls tab visible
+- RN on-device Storybook (npm run storybook) unaffected
+
+**Status: APPROVED**
 
 ## Self-Check: PASSED
 
