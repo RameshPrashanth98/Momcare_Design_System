@@ -9,8 +9,8 @@
     "web": "expo start --web",
     "test": "jest",
     "test:watch": "jest --watch",
-    "storybook": "cross-env EXPO_PUBLIC_STORYBOOK=true expo start",
-    "storybook:web": "storybook dev -p 6006 --config-dir .storybook",
+    "storybook": "storybook dev -p 6006 --config-dir .storybook",
+    "storybook:rn": "cross-env EXPO_PUBLIC_STORYBOOK=true expo start",
     "build-storybook:web": "storybook build --config-dir .storybook --output-dir storybook-static"
   },
   "dependencies": {
