@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-00-PLAN.md — Test infrastructure: Jest config + all Phase 1 test stubs (Wave 0)
+- [x] 01-00-PLAN.md — Test infrastructure: Jest config + all Phase 1 test stubs (Wave 0)
 - [ ] 01-01-PLAN.md — Expo SDK 54 scaffold, NativeWind v4 config (babel/metro/global.css), SmokeTest component
 - [ ] 01-02-PLAN.md — All design token TypeScript files + tailwind.config.ts full wiring
 - [ ] 01-03-PLAN.md — Storybook v10 on-device setup, font decorator, TokenShowcase story, env-var toggle
@@ -130,7 +130,7 @@ Phases execute strictly in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Infrastructure | 0/5 | Not started | - |
+| 1. Foundation & Infrastructure | 1/5 | In progress | - |
 | 2. Core Primitives | 0/3 | Not started | - |
 | 3. Form Components | 0/5 | Not started | - |
 | 4. Actions & Navigation | 0/3 | Not started | - |
