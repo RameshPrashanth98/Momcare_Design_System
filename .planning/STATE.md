@@ -94,6 +94,12 @@ None yet.
 - [Phase 1 - RESOLVED]: Package versions verified via npm info on 2026-03-15; tailwindcss pinned to ^3.4.17 (NativeWind v4 incompatible with Tailwind v4)
 - [Phase 1 - OPEN]: Cormorant Garamond .ttf files must be manually downloaded and placed in assets/fonts/ before brand typography works (Plan 03 or user action)
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 1 | Set up Storybook 8 for this project | 2026-03-15 | 178a67f | [1-set-up-storybook-8-for-this-project](.planning/quick/1-set-up-storybook-8-for-this-project/) |
+
 ## Session Continuity
 
 Last session: 2026-03-15T16:20:00Z
