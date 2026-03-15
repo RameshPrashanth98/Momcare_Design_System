@@ -15,9 +15,9 @@
 - [x] **FOUN-06**: All radius tokens are defined (radius-none through radius-full)
 - [x] **FOUN-07**: All shadow/elevation tokens are defined (shadow-xs through shadow-2xl, shadow-inner)
 - [x] **FOUN-08**: Grid system breakpoints are configured (mobile 4-col, tablet 8-col, desktop 12-col)
-- [ ] **FOUN-09**: Storybook React Native v7 is installed and runs on-device via Expo Dev Client
-- [ ] **FOUN-10**: Storybook toggle pattern is established (env-var EXPO_PUBLIC_STORYBOOK separates app from Storybook entry point)
-- [ ] **FOUN-11**: Storybook global decorator loads fonts before any story renders
+- [x] **FOUN-09**: Storybook React Native v7 is installed and runs on-device via Expo Dev Client
+- [x] **FOUN-10**: Storybook toggle pattern is established (env-var EXPO_PUBLIC_STORYBOOK separates app from Storybook entry point)
+- [x] **FOUN-11**: Storybook global decorator loads fonts before any story renders
 - [x] **FOUN-12**: `cva` (class-variance-authority) is installed and a variant coding convention is documented
 - [x] **FOUN-13**: Barrel exports (`index.ts`) are established and all components are importable from the root
 
@@ -123,9 +123,9 @@
 | FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Complete |
 | FOUN-08 | Phase 1 | Complete |
-| FOUN-09 | Phase 1 | Pending |
-| FOUN-10 | Phase 1 | Pending |
-| FOUN-11 | Phase 1 | Pending |
+| FOUN-09 | Phase 1 | Complete |
+| FOUN-10 | Phase 1 | Complete |
+| FOUN-11 | Phase 1 | Complete |
 | FOUN-12 | Phase 1 | Complete |
 | FOUN-13 | Phase 1 | Complete |
 | PRIM-01 | Phase 2 | Pending |
