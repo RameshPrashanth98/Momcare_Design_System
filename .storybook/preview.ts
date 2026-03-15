@@ -1,26 +1,18 @@
-import type { Preview } from "@storybook/react";
-import "../.storybook/tailwind.css";
-import { colors, semanticColors } from "../tokens/colors";
-import { fontSize, fontFamily } from "../tokens/typography";
-
-export const parameters = {
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/i,
-    },
-  },
-  a11y: {
-    config: {},
-  },
-};
-
-export const globals = {
-  designTokens: { colors, semanticColors, fontSize, fontFamily },
-};
+import type { Preview } from "@storybook/react-vite";
+import "./tailwind.css";
 
 const preview: Preview = {
-  parameters,
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+    a11y: {
+      config: {},
+    },
+  },
 };
 
 export default preview;
