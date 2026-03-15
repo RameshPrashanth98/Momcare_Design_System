@@ -3,9 +3,9 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: "Quick task 1 complete — Storybook 8 web setup verified at localhost:6006"
-last_updated: "2026-03-15T16:20:00Z"
-last_activity: "2026-03-15 — Quick task 1 complete (all 3/3 tasks): Storybook 8 web setup verified by user, web UI confirmed at localhost:6006"
+stopped_at: "Quick task 2 — awaiting human verify of Storybook Design Tokens stories (checkpoint)"
+last_updated: "2026-03-15T16:46:00Z"
+last_activity: "2026-03-15 — Quick task 2 (2/2 auto tasks done): color tokens updated to named palette, 8 Design Tokens stories created; awaiting checkpoint verify"
 progress:
   total_phases: 6
   completed_phases: 1
@@ -82,6 +82,9 @@ Recent decisions affecting current work:
 - [Quick-1]: *.web.stories.tsx convention separates web stories from RN stories — prevents Vite from processing Flow-typed react-native imports
 - [Quick-1]: vite pinned to ^6 (not ^8) — @storybook/builder-vite@8 peerDeps only support Vite 4/5/6; Vite 8 uses rolldown which crashes
 - [Quick-1]: @storybook/react must be explicitly pinned to @8 — npm resolves v10 by default causing entry-preview.mjs export mismatch
+- [Quick-2]: colors.neutral retains numeric keys (50–900); rose/cream/sage use named palette keys per HTML spec
+- [Quick-2]: CSS box-shadow derived from RN shadow tokens: offset.width/height=x/y, shadowRadius=blur, shadowOpacity=rgba alpha; inner uses hardcoded inset value
+- [Quick-2]: All Storybook story dynamic values use inline style — no Tailwind dynamic class assembly per NativeWind static-scan constraint
 
 ### Pending Todos
 
@@ -99,9 +102,10 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 1 | Set up Storybook 8 for this project | 2026-03-15 | 178a67f | [1-set-up-storybook-8-for-this-project](.planning/quick/1-set-up-storybook-8-for-this-project/) |
+| 2 | Update color tokens to HTML spec + add 8 Design Token stories | 2026-03-15 | 7c870ea | [2-update-color-tokens-to-html-spec-and-add](.planning/quick/2-update-color-tokens-to-html-spec-and-add/) |
 
 ## Session Continuity
 
-Last session: 2026-03-15T16:20:00Z
-Stopped at: Quick task 1 complete — all 3/3 tasks done, Storybook 8 web UI verified at localhost:6006
+Last session: 2026-03-15T16:46:00Z
+Stopped at: Quick task 2 — 2/2 auto tasks committed; awaiting checkpoint:human-verify at localhost:6006
 Resume file: None
