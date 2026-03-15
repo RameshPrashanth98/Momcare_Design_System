@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-foundation-infrastructure/01-02-PLAN.md
-last_updated: "2026-03-15T15:15:30.654Z"
-last_activity: "2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Expo project fully wired"
+stopped_at: Completed 01-foundation-infrastructure/01-04-PLAN.md
+last_updated: "2026-03-15T15:20:32.209Z"
+last_activity: "2026-03-15 — Plan 01-04 complete: cn() utility, barrel export skeleton, cva convention document"
 progress:
   total_phases: 6
   completed_phases: 0
   total_plans: 5
-  completed_plans: 3
-  percent: 40
+  completed_plans: 4
+  percent: 80
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-03-15)
 ## Current Position
 
 Phase: 1 of 6 (Foundation & Infrastructure)
-Plan: 2 of 5 in current phase (Plans 00 and 01 complete)
+Plan: 4 of 5 in current phase (Plans 00, 01, 02, 04 complete — Plan 03 Storybook is next)
 Status: In progress
-Last activity: 2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Expo project fully wired
+Last activity: 2026-03-15 — Plan 01-04 complete: cn() utility, barrel export, cva convention document
 
-Progress: [████░░░░░░] 40%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Progress: [████░░░░░░] 40%
 
 *Updated after each plan completion*
 | Phase 01-foundation-infrastructure P02 | 18 | 2 tasks | 8 files |
+| Phase 01-foundation-infrastructure P04 | 10 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [Phase 01-02]: Token files use TypeScript const exports with no framework deps — importable in tailwind.config.ts and directly in components if needed
 - [Phase 01-02]: readonly fontFamily arrays spread with [...array] in tailwind.config.ts to convert to mutable string[] required by Tailwind Config type
 - [Phase 01-02]: Numeric spacing/radius values converted to px strings in tailwind.config.ts — tokens store numbers for React Native StyleSheet; Tailwind requires strings
+- [Phase 01-foundation-infrastructure]: cn() is the ONLY approved className construction method — template literals produce no NativeWind styles at compile time
+- [Phase 01-foundation-infrastructure]: cva-pattern.md is ENFORCED from Phase 2 — every variant component must follow it; documented anti-patterns prevent dynamic class assembly across 50 components
+- [Phase 01-foundation-infrastructure]: src/index.ts is the single public API surface — consumers import from barrel, not deep paths; phases uncomment sections as components are built
 
 ### Pending Todos
 
@@ -86,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T15:15:30.650Z
-Stopped at: Completed 01-foundation-infrastructure/01-02-PLAN.md
+Last session: 2026-03-15T15:20:32.206Z
+Stopped at: Completed 01-foundation-infrastructure/01-04-PLAN.md
 Resume file: None

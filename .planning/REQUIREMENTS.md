@@ -18,8 +18,8 @@
 - [ ] **FOUN-09**: Storybook React Native v7 is installed and runs on-device via Expo Dev Client
 - [ ] **FOUN-10**: Storybook toggle pattern is established (env-var EXPO_PUBLIC_STORYBOOK separates app from Storybook entry point)
 - [ ] **FOUN-11**: Storybook global decorator loads fonts before any story renders
-- [ ] **FOUN-12**: `cva` (class-variance-authority) is installed and a variant coding convention is documented
-- [ ] **FOUN-13**: Barrel exports (`index.ts`) are established and all components are importable from the root
+- [x] **FOUN-12**: `cva` (class-variance-authority) is installed and a variant coding convention is documented
+- [x] **FOUN-13**: Barrel exports (`index.ts`) are established and all components are importable from the root
 
 ### Primitives
 
@@ -126,8 +126,8 @@
 | FOUN-09 | Phase 1 | Pending |
 | FOUN-10 | Phase 1 | Pending |
 | FOUN-11 | Phase 1 | Pending |
-| FOUN-12 | Phase 1 | Pending |
-| FOUN-13 | Phase 1 | Pending |
+| FOUN-12 | Phase 1 | Complete |
+| FOUN-13 | Phase 1 | Complete |
 | PRIM-01 | Phase 2 | Pending |
 | PRIM-02 | Phase 2 | Pending |
 | PRIM-03 | Phase 2 | Pending |
