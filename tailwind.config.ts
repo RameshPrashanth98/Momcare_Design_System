@@ -36,25 +36,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand palettes
-        rose:    colors.rose,
-        cream:   colors.cream,
-        sage:    colors.sage,
-        neutral: colors.neutral,
-        // Status colors
-        success:         colors.status.success,
-        "success-light": colors.status.successLight,
-        warning:         colors.status.warning,
-        "warning-light": colors.status.warningLight,
-        error:           colors.status.error,
-        "error-light":   colors.status.errorLight,
-        info:            colors.status.info,
-        "info-light":    colors.status.infoLight,
-        // Semantic aliases
-        primary:        semanticColors.primary,
-        "primary-dark": semanticColors.primaryDark,
-        surface:        semanticColors.surface,
-        background:     semanticColors.background,
+        // Brand palettes — now use named keys
+        rose:    colors.rose,     // rose-blush, rose-petal, rose-mist, rose-deep, rose-dark
+        cream:   colors.cream,    // cream-warm, cream-soft, cream-mid
+        sage:    colors.sage,     // sage-light, sage-mid, sage-deep
+        neutral: colors.neutral,  // neutral-50 through neutral-900
+        // Status (flat, no object nesting needed)
+        success: colors.status.success,
+        warning: colors.status.warning,
+        error:   colors.status.error,
+        info:    colors.status.info,
+        // Semantic aliases (flat Tailwind keys)
+        primary:          semanticColors.primary,
+        "primary-hover":  semanticColors.primaryHover,
+        secondary:        semanticColors.secondary,
+        accent:           semanticColors.accent,
+        "text-primary":   semanticColors.textPrimary,
+        "text-secondary": semanticColors.textSecondary,
+        "text-muted":     semanticColors.textMuted,
+        "bg-base":        semanticColors.bgBase,
+        "bg-subtle":      semanticColors.bgSubtle,
+        "border-default": semanticColors.borderDefault,
+        "border-subtle":  semanticColors.borderSubtle,
       },
       fontFamily: {
         display:            [...fontFamily.display],
