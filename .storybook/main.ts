@@ -5,7 +5,6 @@ const config: StorybookConfig = {
   // Convention: web stories use *.web.stories.tsx; RN stories use *.stories.tsx
   stories: ["../src/stories/**/*.web.stories.@(ts|tsx)"],
   addons: [
-    "@storybook/addon-essentials",
     "@storybook/addon-a11y",
   ],
   framework: {
