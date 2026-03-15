@@ -1,7 +1,9 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
-  stories: ["../src/stories/**/*.stories.@(ts|tsx)"],
+  // Only load web stories — RN stories (React Native imports) live in .rnstorybook/
+  // Convention: web stories use *.web.stories.tsx; RN stories use *.stories.tsx
+  stories: ["../src/stories/**/*.web.stories.@(ts|tsx)"],
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
