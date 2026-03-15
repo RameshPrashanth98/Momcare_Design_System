@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in-progress
-stopped_at: "Completed 01-foundation-infrastructure/01-00-PLAN.md"
-last_updated: "2026-03-15T14:31:00Z"
-last_activity: "2026-03-15 — Plan 01-00 complete: Jest test infrastructure and 8 Wave 0 stub files created"
+status: executing
+stopped_at: Completed 01-foundation-infrastructure/01-01-PLAN.md
+last_updated: "2026-03-15T15:08:06.370Z"
+last_activity: "2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Jest compatibility fixed"
 progress:
   total_phases: 6
   completed_phases: 0
   total_plans: 5
-  completed_plans: 1
+  completed_plans: 2
   percent: 4
 ---
 
@@ -26,27 +26,27 @@ See: .planning/PROJECT.md (updated 2026-03-15)
 ## Current Position
 
 Phase: 1 of 6 (Foundation & Infrastructure)
-Plan: 1 of 5 in current phase (Plan 00 complete)
+Plan: 2 of 5 in current phase (Plans 00 and 01 complete)
 Status: In progress
-Last activity: 2026-03-15 — Plan 01-00 complete: Jest test infrastructure and 8 Wave 0 stub files created
+Last activity: 2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Expo project fully wired
 
-Progress: [█░░░░░░░░░] 4%
+Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 2 min
-- Total execution time: 0.03 hours
+- Total plans completed: 2
+- Average duration: 7.5 min
+- Total execution time: 0.25 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation-infrastructure | 1 | 2 min | 2 min |
+| 01-foundation-infrastructure | 2 | 15 min | 7.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-00 (2 min)
+- Last 5 plans: 01-00 (2 min), 01-01 (13 min)
 - Trend: -
 
 *Updated after each plan completion*
@@ -65,6 +65,9 @@ Recent decisions affecting current work:
 - [01-00]: jest-expo preset used — only viable option for React Native + Expo Jest compatibility
 - [01-00]: transformIgnorePatterns includes nativewind, tailwind-merge, clsx, class-variance-authority to handle ESM-only packages under CommonJS Jest
 - [01-00]: Wave 0 stub pattern established — all test files created before implementation; stubs fail RED intentionally
+- [Phase 01]: withStorybook wraps withNativeWind in metro.config.js — reversed order silently overwrites NativeWind's Metro resolver
+- [Phase 01]: react-native-worklets@0.7.4 required as dependency of react-native-css-interop@0.2.3 bundled in nativewind@4.2.3 — install even with reanimated v3
+- [Phase 01]: NativeModules polyfill via moduleNameMapper fixes jest-expo@54 + react-native@0.76 .default incompatibility — required for Jest tests to run
 
 ### Pending Todos
 
@@ -72,12 +75,13 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 1 risk]: NativeWind v4 + Storybook combined Metro config is MEDIUM confidence — run a spike on Day 1, verify withNativeWind and Storybook Metro preset composition order before proceeding
-- [Phase 1 risk]: Cormorant Garamond may not be available via @expo-google-fonts — verify; fallback is manual .ttf in /assets/fonts/
-- [Phase 1]: Pin exact package versions with npm info before locking package.json — training data cutoff Aug 2025; NativeWind v4 + Tailwind v4 compatibility may have shipped by March 2026
+- [Phase 1 - RESOLVED]: NativeWind v4 + Storybook Metro composition order confirmed — withStorybook(withNativeWind) order works; tested via smoke test
+- [Phase 1 - RESOLVED]: Cormorant Garamond confirmed NOT in @expo-google-fonts — confirmed manual .ttf approach via assets/fonts/; INSTRUCTIONS.md created
+- [Phase 1 - RESOLVED]: Package versions verified via npm info on 2026-03-15; tailwindcss pinned to ^3.4.17 (NativeWind v4 incompatible with Tailwind v4)
+- [Phase 1 - OPEN]: Cormorant Garamond .ttf files must be manually downloaded and placed in assets/fonts/ before brand typography works (Plan 03 or user action)
 
 ## Session Continuity
 
-Last session: 2026-03-15T14:31:00Z
-Stopped at: Completed 01-foundation-infrastructure/01-00-PLAN.md
-Resume file: .planning/phases/01-foundation-infrastructure/01-01-PLAN.md
+Last session: 2026-03-15T15:08:06.366Z
+Stopped at: Completed 01-foundation-infrastructure/01-01-PLAN.md
+Resume file: None

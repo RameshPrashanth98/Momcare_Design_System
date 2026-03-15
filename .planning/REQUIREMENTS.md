@@ -7,8 +7,8 @@
 
 ### Foundation & Infrastructure
 
-- [ ] **FOUN-01**: Expo + React Native + TypeScript project is scaffolded and builds successfully
-- [ ] **FOUN-02**: NativeWind v4 is installed and configured (tailwind.config.ts with preset, babel.config.js, metro.config.js, global.css) — verified with a smoke-test component
+- [x] **FOUN-01**: Expo + React Native + TypeScript project is scaffolded and builds successfully
+- [x] **FOUN-02**: NativeWind v4 is installed and configured (tailwind.config.ts with preset, babel.config.js, metro.config.js, global.css) — verified with a smoke-test component
 - [ ] **FOUN-03**: All Morph Maternity color tokens are defined in tailwind.config.ts (Rose, Cream, Sage, Neutral palettes, Status colors, Semantic tokens)
 - [ ] **FOUN-04**: All typography tokens are configured (Cormorant Garamond, DM Sans, DM Mono fonts loaded; type scale xs–6xl; font weights 300–600; line heights)
 - [ ] **FOUN-05**: All spacing tokens are defined (4px base grid, space-1 through space-48)
@@ -115,8 +115,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | Phase 1 | Pending |
-| FOUN-02 | Phase 1 | Pending |
+| FOUN-01 | Phase 1 | Complete |
+| FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Pending |
 | FOUN-04 | Phase 1 | Pending |
 | FOUN-05 | Phase 1 | Pending |
