@@ -103,6 +103,7 @@ None yet.
 |---|-------------|------|--------|-----------|
 | 1 | Set up Storybook 8 for this project | 2026-03-15 | 178a67f | [1-set-up-storybook-8-for-this-project](.planning/quick/1-set-up-storybook-8-for-this-project/) |
 | 2 | Update color tokens to HTML spec + add 8 Design Token stories | 2026-03-15 | 7c870ea | [2-update-color-tokens-to-html-spec-and-add](.planning/quick/2-update-color-tokens-to-html-spec-and-add/) |
+| 3 | Connect GitHub remote and push all existing commits | 2026-03-15 | cfbc1ce | [3-connect-github-remote-and-push-all-exist](.planning/quick/3-connect-github-remote-and-push-all-exist/) |
 
 ## Session Continuity
 
