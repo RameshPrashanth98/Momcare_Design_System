@@ -3,9 +3,9 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: "Checkpoint: Plan 01-03 Task 3 — awaiting human verification of Storybook on-device (fonts + colors + env-var toggle)"
-last_updated: "2026-03-15T15:29:06.788Z"
-last_activity: "2026-03-15 — Plan 01-04 complete: cn() utility, barrel export, cva convention document"
+stopped_at: "Checkpoint: Quick task 1 Task 3 — awaiting human verification of web Storybook UI on localhost:6006"
+last_updated: "2026-03-15T16:12:00Z"
+last_activity: "2026-03-15 — Quick task 1 complete (paused at verify): Storybook 8 web setup, tailwind.web.config.ts, Welcome.web.stories.tsx, build passes"
 progress:
   total_phases: 6
   completed_phases: 1
@@ -79,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation-infrastructure]: src/index.ts is the single public API surface — consumers import from barrel, not deep paths; phases uncomment sections as components are built
 - [Phase 01-foundation-infrastructure]: Storybook v10 index.tsx uses start() API from @storybook/react-native — not the simple view.getStorybookUI() from old docs
 - [Phase 01-foundation-infrastructure]: TokenShowcase Swatch color prop receives full class string — no template literal assembly; ensures NativeWind static scanning works at build time
+- [Quick-1]: *.web.stories.tsx convention separates web stories from RN stories — prevents Vite from processing Flow-typed react-native imports
+- [Quick-1]: vite pinned to ^6 (not ^8) — @storybook/builder-vite@8 peerDeps only support Vite 4/5/6; Vite 8 uses rolldown which crashes
+- [Quick-1]: @storybook/react must be explicitly pinned to @8 — npm resolves v10 by default causing entry-preview.mjs export mismatch
 
 ### Pending Todos
 
@@ -93,6 +96,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T15:29:06.784Z
-Stopped at: Checkpoint: Plan 01-03 Task 3 — awaiting human verification of Storybook on-device (fonts + colors + env-var toggle)
+Last session: 2026-03-15T16:12:00Z
+Stopped at: Checkpoint: Quick task 1 Task 3 — awaiting human verification of web Storybook UI on localhost:6006
 Resume file: None
