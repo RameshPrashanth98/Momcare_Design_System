@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-foundation-infrastructure/01-04-PLAN.md
-last_updated: "2026-03-15T15:20:32.209Z"
-last_activity: "2026-03-15 — Plan 01-04 complete: cn() utility, barrel export skeleton, cva convention document"
+stopped_at: "Checkpoint: Plan 01-03 Task 3 — awaiting human verification of Storybook on-device (fonts + colors + env-var toggle)"
+last_updated: "2026-03-15T15:29:06.788Z"
+last_activity: "2026-03-15 — Plan 01-04 complete: cn() utility, barrel export, cva convention document"
 progress:
   total_phases: 6
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
   percent: 80
 ---
 
@@ -52,6 +52,7 @@ Progress: [████████░░] 80%
 *Updated after each plan completion*
 | Phase 01-foundation-infrastructure P02 | 18 | 2 tasks | 8 files |
 | Phase 01-foundation-infrastructure P04 | 10 | 2 tasks | 3 files |
+| Phase 01-foundation-infrastructure P03 | 15 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -76,6 +77,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation-infrastructure]: cn() is the ONLY approved className construction method — template literals produce no NativeWind styles at compile time
 - [Phase 01-foundation-infrastructure]: cva-pattern.md is ENFORCED from Phase 2 — every variant component must follow it; documented anti-patterns prevent dynamic class assembly across 50 components
 - [Phase 01-foundation-infrastructure]: src/index.ts is the single public API surface — consumers import from barrel, not deep paths; phases uncomment sections as components are built
+- [Phase 01-foundation-infrastructure]: Storybook v10 index.tsx uses start() API from @storybook/react-native — not the simple view.getStorybookUI() from old docs
+- [Phase 01-foundation-infrastructure]: TokenShowcase Swatch color prop receives full class string — no template literal assembly; ensures NativeWind static scanning works at build time
 
 ### Pending Todos
 
@@ -90,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T15:20:32.206Z
-Stopped at: Completed 01-foundation-infrastructure/01-04-PLAN.md
+Last session: 2026-03-15T15:29:06.784Z
+Stopped at: Checkpoint: Plan 01-03 Task 3 — awaiting human verification of Storybook on-device (fonts + colors + env-var toggle)
 Resume file: None
