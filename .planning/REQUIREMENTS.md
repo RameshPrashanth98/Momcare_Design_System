@@ -113,17 +113,60 @@
 
 ## Traceability
 
-*Populated during roadmap creation.*
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 to FOUN-13 | Phase 1 | Pending |
-| PRIM-01 to PRIM-04 | Phase 2 | Pending |
-| FORM-01 to FORM-12 | Phase 3 | Pending |
-| ACTN-01 to ACTN-09 | Phase 4 | Pending |
-| NAV-01 to NAV-04 | Phase 4 | Pending |
-| DATA-01 to DATA-05 | Phase 5 | Pending |
-| LAYO-01 to LAYO-05 | Phase 6 | Pending |
+| FOUN-01 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Pending |
+| FOUN-03 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Pending |
+| FOUN-05 | Phase 1 | Pending |
+| FOUN-06 | Phase 1 | Pending |
+| FOUN-07 | Phase 1 | Pending |
+| FOUN-08 | Phase 1 | Pending |
+| FOUN-09 | Phase 1 | Pending |
+| FOUN-10 | Phase 1 | Pending |
+| FOUN-11 | Phase 1 | Pending |
+| FOUN-12 | Phase 1 | Pending |
+| FOUN-13 | Phase 1 | Pending |
+| PRIM-01 | Phase 2 | Pending |
+| PRIM-02 | Phase 2 | Pending |
+| PRIM-03 | Phase 2 | Pending |
+| PRIM-04 | Phase 2 | Pending |
+| FORM-01 | Phase 3 | Pending |
+| FORM-02 | Phase 3 | Pending |
+| FORM-03 | Phase 3 | Pending |
+| FORM-04 | Phase 3 | Pending |
+| FORM-05 | Phase 3 | Pending |
+| FORM-06 | Phase 3 | Pending |
+| FORM-07 | Phase 3 | Pending |
+| FORM-08 | Phase 3 | Pending |
+| FORM-09 | Phase 3 | Pending |
+| FORM-10 | Phase 3 | Pending |
+| FORM-11 | Phase 3 | Pending |
+| FORM-12 | Phase 3 | Pending |
+| ACTN-01 | Phase 4 | Pending |
+| ACTN-02 | Phase 4 | Pending |
+| ACTN-03 | Phase 4 | Pending |
+| ACTN-04 | Phase 4 | Pending |
+| ACTN-05 | Phase 4 | Pending |
+| ACTN-06 | Phase 4 | Pending |
+| ACTN-07 | Phase 4 | Pending |
+| ACTN-08 | Phase 4 | Pending |
+| ACTN-09 | Phase 4 | Pending |
+| NAV-01 | Phase 4 | Pending |
+| NAV-02 | Phase 4 | Pending |
+| NAV-03 | Phase 4 | Pending |
+| NAV-04 | Phase 4 | Pending |
+| DATA-01 | Phase 5 | Pending |
+| DATA-02 | Phase 5 | Pending |
+| DATA-03 | Phase 5 | Pending |
+| DATA-04 | Phase 5 | Pending |
+| DATA-05 | Phase 5 | Pending |
+| LAYO-01 | Phase 6 | Pending |
+| LAYO-02 | Phase 6 | Pending |
+| LAYO-03 | Phase 6 | Pending |
+| LAYO-04 | Phase 6 | Pending |
+| LAYO-05 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 50 total
@@ -132,4 +175,4 @@
 
 ---
 *Requirements defined: 2026-03-15*
-*Last updated: 2026-03-15 after initial definition*
+*Last updated: 2026-03-15 after roadmap creation — traceability table fully populated*
