@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-foundation-infrastructure/01-01-PLAN.md
-last_updated: "2026-03-15T15:08:06.370Z"
-last_activity: "2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Jest compatibility fixed"
+stopped_at: Completed 01-foundation-infrastructure/01-02-PLAN.md
+last_updated: "2026-03-15T15:15:30.654Z"
+last_activity: "2026-03-15 — Plan 01-01 complete: NativeWind v4 configured, SmokeTest passing, Expo project fully wired"
 progress:
   total_phases: 6
   completed_phases: 0
   total_plans: 5
-  completed_plans: 2
-  percent: 4
+  completed_plans: 3
+  percent: 40
 ---
 
 # Project State
@@ -50,6 +50,7 @@ Progress: [████░░░░░░] 40%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-foundation-infrastructure P02 | 18 | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,9 @@ Recent decisions affecting current work:
 - [Phase 01]: withStorybook wraps withNativeWind in metro.config.js — reversed order silently overwrites NativeWind's Metro resolver
 - [Phase 01]: react-native-worklets@0.7.4 required as dependency of react-native-css-interop@0.2.3 bundled in nativewind@4.2.3 — install even with reanimated v3
 - [Phase 01]: NativeModules polyfill via moduleNameMapper fixes jest-expo@54 + react-native@0.76 .default incompatibility — required for Jest tests to run
+- [Phase 01-02]: Token files use TypeScript const exports with no framework deps — importable in tailwind.config.ts and directly in components if needed
+- [Phase 01-02]: readonly fontFamily arrays spread with [...array] in tailwind.config.ts to convert to mutable string[] required by Tailwind Config type
+- [Phase 01-02]: Numeric spacing/radius values converted to px strings in tailwind.config.ts — tokens store numbers for React Native StyleSheet; Tailwind requires strings
 
 ### Pending Todos
 
@@ -82,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T15:08:06.366Z
-Stopped at: Completed 01-foundation-infrastructure/01-01-PLAN.md
+Last session: 2026-03-15T15:15:30.650Z
+Stopped at: Completed 01-foundation-infrastructure/01-02-PLAN.md
 Resume file: None

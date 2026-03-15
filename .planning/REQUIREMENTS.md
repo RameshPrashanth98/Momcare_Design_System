@@ -9,12 +9,12 @@
 
 - [x] **FOUN-01**: Expo + React Native + TypeScript project is scaffolded and builds successfully
 - [x] **FOUN-02**: NativeWind v4 is installed and configured (tailwind.config.ts with preset, babel.config.js, metro.config.js, global.css) — verified with a smoke-test component
-- [ ] **FOUN-03**: All Morph Maternity color tokens are defined in tailwind.config.ts (Rose, Cream, Sage, Neutral palettes, Status colors, Semantic tokens)
-- [ ] **FOUN-04**: All typography tokens are configured (Cormorant Garamond, DM Sans, DM Mono fonts loaded; type scale xs–6xl; font weights 300–600; line heights)
-- [ ] **FOUN-05**: All spacing tokens are defined (4px base grid, space-1 through space-48)
-- [ ] **FOUN-06**: All radius tokens are defined (radius-none through radius-full)
-- [ ] **FOUN-07**: All shadow/elevation tokens are defined (shadow-xs through shadow-2xl, shadow-inner)
-- [ ] **FOUN-08**: Grid system breakpoints are configured (mobile 4-col, tablet 8-col, desktop 12-col)
+- [x] **FOUN-03**: All Morph Maternity color tokens are defined in tailwind.config.ts (Rose, Cream, Sage, Neutral palettes, Status colors, Semantic tokens)
+- [x] **FOUN-04**: All typography tokens are configured (Cormorant Garamond, DM Sans, DM Mono fonts loaded; type scale xs–6xl; font weights 300–600; line heights)
+- [x] **FOUN-05**: All spacing tokens are defined (4px base grid, space-1 through space-48)
+- [x] **FOUN-06**: All radius tokens are defined (radius-none through radius-full)
+- [x] **FOUN-07**: All shadow/elevation tokens are defined (shadow-xs through shadow-2xl, shadow-inner)
+- [x] **FOUN-08**: Grid system breakpoints are configured (mobile 4-col, tablet 8-col, desktop 12-col)
 - [ ] **FOUN-09**: Storybook React Native v7 is installed and runs on-device via Expo Dev Client
 - [ ] **FOUN-10**: Storybook toggle pattern is established (env-var EXPO_PUBLIC_STORYBOOK separates app from Storybook entry point)
 - [ ] **FOUN-11**: Storybook global decorator loads fonts before any story renders
@@ -117,12 +117,12 @@
 |-------------|-------|--------|
 | FOUN-01 | Phase 1 | Complete |
 | FOUN-02 | Phase 1 | Complete |
-| FOUN-03 | Phase 1 | Pending |
-| FOUN-04 | Phase 1 | Pending |
-| FOUN-05 | Phase 1 | Pending |
-| FOUN-06 | Phase 1 | Pending |
-| FOUN-07 | Phase 1 | Pending |
-| FOUN-08 | Phase 1 | Pending |
+| FOUN-03 | Phase 1 | Complete |
+| FOUN-04 | Phase 1 | Complete |
+| FOUN-05 | Phase 1 | Complete |
+| FOUN-06 | Phase 1 | Complete |
+| FOUN-07 | Phase 1 | Complete |
+| FOUN-08 | Phase 1 | Complete |
 | FOUN-09 | Phase 1 | Pending |
 | FOUN-10 | Phase 1 | Pending |
 | FOUN-11 | Phase 1 | Pending |
