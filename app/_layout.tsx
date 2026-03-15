@@ -1,6 +1,6 @@
 import "../global.css";
 import { useEffect } from "react";
-import { Stack } from "expo-router";
+import { Stack, Redirect } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import { DMSans_400Regular, DMSans_500Medium } from "@expo-google-fonts/dm-sans";
@@ -38,6 +38,12 @@ export default function RootLayout() {
   }, [fontsLoaded, fontError]);
 
   if (!fontsLoaded && !fontError) return null;
+
+  // Redirect to Storybook when EXPO_PUBLIC_STORYBOOK env var is set to "true"
+  const isStorybook = process.env.EXPO_PUBLIC_STORYBOOK === "true";
+  if (isStorybook) {
+    return <Redirect href="/storybook" />;
+  }
 
   return <Stack />;
 }
