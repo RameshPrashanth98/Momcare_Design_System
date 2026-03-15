@@ -32,7 +32,7 @@ decisions:
 metrics:
   duration: "~10 min"
   completed_date: "2026-03-15"
-  tasks_completed: 2
+  tasks_completed: 3
   files_modified: 12
 ---
 
@@ -151,6 +151,10 @@ The HTML spec uses named keys for rose/cream/sage (it's a brand palette, not a u
 
 ### TypeScript
 - `npx tsc --noEmit`: PASSED (no output = no errors)
+
+### Task 3: Checkpoint — verify Storybook Design Tokens stories
+
+Human verified at localhost:6006 on 2026-03-15. All 8 Design Token stories confirmed rendering correctly (Color, Typography, Spacing, Elevation, Border, Radius, Grid, Iconography). No console errors reported. Checkpoint approved.
 
 ### Commits
 - 3a89fd2: feat(quick-2): update color tokens to HTML spec named palette
