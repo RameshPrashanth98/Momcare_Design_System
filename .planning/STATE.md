@@ -85,6 +85,7 @@ Recent decisions affecting current work:
 - [Quick-2]: colors.neutral retains numeric keys (50–900); rose/cream/sage use named palette keys per HTML spec
 - [Quick-2]: CSS box-shadow derived from RN shadow tokens: offset.width/height=x/y, shadowRadius=blur, shadowOpacity=rgba alpha; inner uses hardcoded inset value
 - [Quick-2]: All Storybook story dynamic values use inline style — no Tailwind dynamic class assembly per NativeWind static-scan constraint
+- [Quick-6]: storybook script name convention aligned — storybook=web Vite (port 6006), storybook:rn=Expo/Metro; matches standard Storybook CLI expectations
 
 ### Pending Todos
 
@@ -104,6 +105,7 @@ None yet.
 | 1 | Set up Storybook 8 for this project | 2026-03-15 | 178a67f | [1-set-up-storybook-8-for-this-project](.planning/quick/1-set-up-storybook-8-for-this-project/) |
 | 2 | Update color tokens to HTML spec + add 8 Design Token stories | 2026-03-15 | 7c870ea | [2-update-color-tokens-to-html-spec-and-add](.planning/quick/2-update-color-tokens-to-html-spec-and-add/) |
 | 3 | Connect GitHub remote and push all existing commits | 2026-03-15 | cfbc1ce | [3-connect-github-remote-and-push-all-exist](.planning/quick/3-connect-github-remote-and-push-all-exist/) |
+| 6 | Fix inverted storybook/storybook:web script names in package.json | 2026-03-15 | 6256a09 | [6-fix-storybook-issue](.planning/quick/6-fix-storybook-issue/) |
 
 ## Session Continuity
 
